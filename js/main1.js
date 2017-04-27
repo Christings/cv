@@ -26,9 +26,45 @@ function pageInit() {
 
 }
 //控制顶侧导航
+var infoTimer;
 function whenIndexChange() {
     //onIndex改变时的逻辑
+    setMtAndOn();
+    //info控制 在第五屏定时弹出 不在隐藏 在第一屏显示个按钮
+    clearTimeout(infoTimer);
+    switch (onIndex){
+        case 0:
+            infoOut=1;
+            break;
+        case 4:
+            infoTimer=setTimeout(function () {
+                infoOut=2;
+                infoToggle();
+            },4000);
+            break;
+        default:
+            infoOut0;
+            break;
+    }
+    infoToggle();
 
+}
+//通过onIndex的值来设置container的margin-top的值，并给当前的附上class-on
+function setMtAndOn() {
+    //给当前所在屏加上class-on,适用于column和nav-right
+    function currentOn(className) {
+        $(className).removeClass("on");
+        $(className).eq(onIndex).addClass("on");
+    }
+    var clientH=$(window).height();
+    mt=-clientH*onIndex;
+    $(".container").css({
+        "transform":"translateY("+mt+"px)"
+    });
+    setTimeout(function () {
+        currentOn(".column");
+        currentOn(".item");
+    },400);
 }
 //弹出左侧个人信息
 function infoToggle() {
@@ -114,12 +150,45 @@ function swipe() {
             endY=event.changeTouches[0].clientY;
             var dX=endX-startX;
             var dY=endY-startY;
-            switch ()
+            switch (slideDirect(dX,dY)){
+                case -2:
+                    if(onIndex<4){
+                        onIndex++;
+                    }
+                    break;
+                case 2:
+                    if(onIndex>0){
+                        onIndex--;
+                    }
+                    break;
+            }
+            whenIndexChange();
         }
     })
 }
+
 //判断滑动方向，注意移动是与滑动相反的方向，左滑应该右移
 function slideDirect(dX,dY) {
     var abs=Math.abs(dX)-Math.abs(dY);
-    
+    if(Math.abs(dX)<10 && Math.abs(dY)<10){
+        //没有滑动
+        return 0;
+    }else if(abs>0){
+        if(dX>0){
+            //右滑
+            return 1;
+        }else {
+            //左滑
+            return -1;
+        }
+    }else {
+        if(dY>0){
+            //下滑
+            return 2;
+        }else {
+            //上滑
+            return -2;
+        }
+    }
+
 }
