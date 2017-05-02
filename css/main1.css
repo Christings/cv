@@ -100,7 +100,7 @@ h2 {
 #block-skill {
     height: auto;
     width: 100%;
-    background-color: #9C58B6;
+    background-color: #22B573;
     color: #FFFFFF;
     padding-bottom: 160px;
     text-align: center;
@@ -117,7 +117,7 @@ h2 {
 #block-skill .skill{
     display: inline-block;
     vertical-align: middle;
-    width: 150px;
+    width: 220px;
     height: 100%;
     margin: 5px 20px;
     background: #26B1B6;
@@ -135,14 +135,31 @@ h2 {
     margin: 10px auto;
     border-bottom: 3px solid #9C58B6;
 }
-#block-skill .skill .skill-point {
-    font-size: 16px;
-    display: inline-block;
-    margin: 5px 20px;
-    padding: 5px 10px;
-    background: rgba(255, 154, 0, 0.4);
-    border-radius: 8px;
+#block-skill .skill dd{
+    margin-top: 10px;
 }
+#block-skill .skill .skill-name{
+    width: 100px;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: -3px;
+}
+#block-skill .skill .skill-bar-wrap{
+    height: 17px;
+    width: 100px;
+    background: #00796b;
+    display: inline-block;
+    border-radius: 20px;
+}
+#block-skill .skill .skill-bar{
+    height: 17px;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+}
+
+
 #block-skill .skill .backface {
     position: absolute;
     left: 0;
