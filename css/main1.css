@@ -50,52 +50,16 @@ h2 {
     background-color: #1889C5;
     padding: 60px 0 100px;
 }
-
 #intro-icon {
     height: 300px;
     width: 100%;
     line-height: 300px;
 }
-
-.link {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    text-indent: -9999em;
-    -webkit-transition: 0.4s linear;
-    transition: 0.4s ease-in;
-}
-
-.link:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-#link-github {
-    background: url(../img/github.png) no-repeat center;
-    margin-left: 76px;
-}
-
-#link-linkedin {
-    background: url(../img/linkedin.png) no-repeat center;
-    margin-left: 76px;
-}
-
 #myPhoto {
     height: 270px;
     width: 270px;
     display: inline-block;
     margin: 0 0 0 78px;
-}
-
-#link-blog {
-    background: url(../img/blog.png) no-repeat center;
-    margin-left: 78px;
-}
-
-#link-email {
-    background: url(../img/email.png) no-repeat center;
-    margin-left: 76px;
 }
 
 #intro-text {
@@ -342,68 +306,6 @@ h2 {
     border-radius: 4px;
     box-shadow: 0 3px 0 0 #ab3434;
 }
-/*#block-prjEXP .prjEXP-title {*/
-    /*width: 300px;*/
-    /*margin: 30px auto;*/
-    /*text-align: center;*/
-/*}*/
-
-/*#block-prjEXP .prjs {*/
-    /*height: auto;*/
-    /*width: 100%;*/
-    /*margin-top: 100px;*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*#block-prjEXP .prj {*/
-    /*float: left;*/
-    /*height: auto;*/
-    /*width: 240px;*/
-    /*margin-left: 105px;*/
-/*}*/
-
-/*#block-prjEXP .prj .prj-logo {*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
-    /*height: 180px;*/
-    /*width: 180px;*/
-    /*border-radius: 50%;*/
-/*}*/
-
-/*#block-prjEXP .prj .prj-title {*/
-    /*height: auto;*/
-    /*width: 240px;*/
-    /*margin: 20px 0;*/
-    /*font-size: 26px;*/
-    /*text-align: center;*/
-/*}*/
-
-/*#block-prjEXP .prj .prj-intro {*/
-    /*height: auto;*/
-    /*width: 240px;*/
-    /*font-size: 20px;*/
-    /*text-indent: 1em*/
-/*}*/
-
-#block-prjEXP #prj-helpmechoose .prj-logo {
-    background: #ED6461 url(../img/helpmechoose.png) no-repeat center;
-    border: 4px solid #FFFFFF;
-}
-
-/*#block-prjEXP #prj-navFixed .prj-title a:hover {*/
-    /*border-bottom: 3px solid white;*/
-/*}*/
-
-/*#block-prjEXP #prj-navFixed .prj-logo {*/
-    /*background: #9C58B6 url(../img/navFixed.png) no-repeat center;*/
-    /*border: 4px solid #FFFFFF;*/
-/*}*/
-
-/*#block-prjEXP #prj-integralSystem .prj-logo {*/
-    /*background: #16CC70 url(../img/integralSystem.png) no-repeat center;*/
-    /*border: 4px solid #FFFFFF;*/
-/*}*/
-
 
 /* block-wantMore */
 #block-wantMore {
@@ -481,6 +383,68 @@ h2 {
 .info {
     z-index: 110;
 }
+/*右侧图标*/
+.nav-right{
+    height: 348px;
+    position: fixed;
+    right:0;
+    top:50%;
+    margin-top: -174px;
+}
+.nav-right .item{
+    height: 50px;
+    width:50px;
+    margin: 10px 0;
+    background: #fe2f62;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    transition: all .8s ease;
+    //标签换行会使居中失效，还是绝对定位好用
+}
+.nav-right a{
+    display: block;
+}
+
+
+.link {
+    /*display: inline-block;*/
+    height: 100px;
+    width: 100px;
+    text-indent: -9999em;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s ease-in;
+}
+
+.link:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#link-github {
+    background: url(../img/github.png) no-repeat center;
+    margin-left: 76px;
+}
+
+#link-linkedin {
+    background: url(../img/linkedin.png) no-repeat center;
+    margin-left: 76px;
+}
+
+
+#link-blog {
+    background: url(../img/blog.png) no-repeat center;
+    margin-left: 78px;
+}
+
+#link-email {
+    background: url(../img/email.png) no-repeat center;
+    margin-left: 76px;
+}
+
 
 
 /* ç™¾åº¦ç»Ÿè®¡ */
