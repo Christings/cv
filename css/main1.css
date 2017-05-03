@@ -57,7 +57,7 @@ h2 {
     left: -10px;
     top: 80px;
     display: inline-block;
-    margin: 0 0 0 78px;
+    margin: 0 0 0 68px;
     border: 8px solid #ffffff;
     border-radius: 20px;
     /*height: 500px;*/
@@ -135,21 +135,20 @@ h2 {
     padding-bottom: 160px;
     text-align: center;
 }
-
 #block-skill .tit3{
     margin-top: 60px;
 }
 #block-skill .content{
     width: auto;
-    height: 300px;
-    margin: 100px auto 0;
+    height: 330px;
+    margin: 30px auto 0;
 }
 #block-skill .skill{
     display: inline-block;
     vertical-align: middle;
-    width: 220px;
+    width: 210px;
     height: 100%;
-    margin: 5px 20px;
+    margin: 5px 10px;
     background: #26B1B6;
     border: 1px solid #efefef;
     box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.35);
@@ -160,7 +159,7 @@ h2 {
 }
 #block-skill .skill .skill-title{
     font-size: 18px;
-    width: 100px;
+    width: 200px;
     height: 40px;
     margin: 10px auto;
     border-bottom: 3px solid #9C58B6;
@@ -174,7 +173,7 @@ h2 {
     display: inline-block;
     position: relative;
     left: 0;
-    top: -3px;
+    top: 5px;
 }
 #block-skill .skill .skill-bar-wrap{
     height: 17px;
@@ -182,14 +181,14 @@ h2 {
     background: #00796b;
     display: inline-block;
     border-radius: 20px;
+    position: relative;
+    top: 8px;
 }
 #block-skill .skill .skill-bar{
     height: 17px;
     background: #fff;
     border-radius: 20px 0 0 20px;
 }
-
-
 #block-skill .skill .backface {
     position: absolute;
     left: 0;
@@ -207,7 +206,6 @@ h2 {
     background: #efefef;
 }
 
-
 /* block-workEXP */
 #block-workEXP {
     height: auto;
@@ -215,68 +213,101 @@ h2 {
     background-color: #26B1B6;
     color: #e7e7e7;
     padding: 30px 0;
-    text-align: center;
 }
 #block-workEXP .tit4{
     margin-top: 10px;
-}
-#block-workEXP .content{
-    width: 650px;
-    height: 500px;
-    margin: 50px auto 0;
-}
-#block-workEXP .history{
-    float: left;
-    width: 50px;
-    height: 100%;
-    margin: 0 2px;
-    background: #953b39;
-    border: 1px solid #eeeeee;
-    border-radius: 2px;
-    box-shadow: 1px 3px 3px 0 #b9b9b9;
-    overflow: hidden;
-    position: relative;
-    transition: all .8s ease;
-}
-#block-workEXP .history .cur{
-    width: 500px;
-}
-#block-workEXP .history .year{
-    position:absolute;
-    left:0;
-    top:0;
-    width: 50px;
-    height: 100%;
     text-align: center;
-    box-sizing: border-box;
-    padding: 30px 0 0 15px;
-    font-size: 18px;
-    font-weight: 700;
-    word-wrap: break-word;
-    letter-spacing: 20px;
 }
-#block-workEXP .history .intro{
+
+#block-workEXP .work-title {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#block-workEXP .workEXP-main {
+    height: auto;
+    width: auto;
+    margin: 20px 0 0 10px;
+}
+
+#block-workEXP .timebox {
+    margin-left: 110px;
+    font-size: 29px;
+}
+
+#block-workEXP .timebox li {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    /*margin-left:80px;*/
+}
+#block-workEXP .timebox .circle {
+    height: 67px;
+    width: 67px;
+    border-radius: 100%;
+    background: #00796b;
     position: absolute;
-    left: 50px;
-    top:0;
-    width: 450px;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 30px;
-    line-height: 2;
-    text-align: left;
-    word-break: break-all;
+    left: 0%;
+    margin-top: 20px;
+    border: 4px solid #ffffff;
 }
-#block-workEXP .history .intro .company{
-    font-weight: 600;
-    font-size: 15px;
+#block-workEXP .timebox .circle0{
+    height: 67px;
+    width: 67px;
+    border-radius: 100%;
+    background: #00796b;
+    position: absolute;
+    left: 30.3%;
+    margin-top: 20px;
+    border: 4px solid #ffffff;
 }
-#block-workEXP .history .intro .job{
-    margin-bottom: 5px;
+#block-workEXP .timebox .circle1{
+    height: 67px;
+    width: 67px;
+    border: 4px solid #ffffff;
+    border-radius: 100%;
+    background: #00796b;
+    position: absolute;
+    left: 61.8%;
+    margin-top: 20px;
 }
-#block-workEXP .history .intro dd{
-    display: list-item;
-    list-style-type: circle;
+#block-workEXP .time0 {
+    margin-left: 110px
+}
+#block-workEXP .time1 {
+    margin-left: 110px
+}
+#block-workEXP .workbox {
+    margin-left: 10px;
+
+}
+
+#block-workEXP .workbox li {
+    padding-top: 10px;
+    border-top: 8px solid rebeccapurple;
+    display: inline-block;
+    width: 360px;
+    vertical-align: top;
+    margin: 15px 30px;
+}
+
+#block-workEXP .workbox li label {
+    display: block;
+}
+
+#block-workEXP .workbox .work-place {
+    font-size: 26px;
+    font-weight: bold
+}
+
+#block-workEXP .workbox .work-position {
+    font-size: 20px;
+}
+
+#block-workEXP .workbox .work-do {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 
@@ -292,21 +323,24 @@ h2 {
     margin: 20px 0;
 }
 #block-prjEXP .content{
-    width: 940px;
+    width: 1200px;
     margin: 0 auto;
 }
 #block-prjEXP .project{
+    margin-top: 30px;
+    margin-left: 55px;
     display: table;
     height: 100px;
-    width: 450px;
+    width: 500px;
     /*background: #fff;*/
     border: 1px solid #eee;
     box-shadow: 1px 3px 3px 0 #b9b9b9;
-    border-radius: 2px;
+    border-radius: 20px;
     opacity: 1;
     cursor: pointer;
     box-sizing: border-box;
     padding: 5px;
+    float: left;
 }
 #block-prjEXP .project .pro-img{
     display: table-cell;
@@ -319,7 +353,6 @@ h2 {
     width: 33px;
     border-radius: 50%;
 }
-
 #block-prjEXP .project .pro-img .iconfont{
     width: 80px;
     height: 80px;
@@ -364,7 +397,7 @@ h2 {
 /*// 左侧个人信息弹出层*/
 .info {
     width: 350px;
-    height: 590px;
+    height: 625px;
     margin-top: -295px;
     position: fixed;
     left: -350px;
