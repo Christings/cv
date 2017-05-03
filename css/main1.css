@@ -47,22 +47,17 @@ h2 {
 #block-intro {
     height: auto;
     width: 100%;
-    background-color: #1889C5;
+    background-color: #22B573;
     padding: 60px 0 100px;
 }
 #intro-icon1 {
     position: absolute;
     height: 400px;
     width: 300px;
-    left: -10px;
     top: 80px;
     display: inline-block;
-    margin: 0 0 0 68px;
     border: 8px solid #ffffff;
     border-radius: 20px;
-    /*height: 500px;*/
-    /*width: 25%;*/
-    /*line-height: 300px;*/
     /*background: #fe2f62;*/
     background: #ee5f5b;
     float: left;
@@ -71,10 +66,9 @@ h2 {
     position: absolute;
     height: 400px;
     width: 300px;
-    left: -70px;
+    left: 10px;
     top: 10px;
     display: inline-block;
-    margin: 0 0 0 78px;
     border: 8px solid #ffffff;
     border-radius: 20px;
     background: #5bb75b;
@@ -83,10 +77,9 @@ h2 {
     position: absolute;
     height: 400px;
     width: 300px;
-    left: -70px;
+    left: 10px;
     top: 10px;
     display: inline-block;
-    margin: 0 0 0 78px;
     border: 8px solid #ffffff;
     border-radius: 20px;
 }
@@ -210,7 +203,7 @@ h2 {
 #block-workEXP {
     height: auto;
     width: 100%;
-    background-color: #26B1B6;
+    background-color: #22B573;
     color: #e7e7e7;
     padding: 30px 0;
 }
@@ -315,7 +308,7 @@ h2 {
 #block-prjEXP {
     padding: 50px 0 200px;
     width: 100%;
-    background-color: #129DE7;
+    background-color: #22B573;
     color: #FFFFFF;
     text-align: center;
 }
@@ -394,7 +387,7 @@ h2 {
     color: #fff;
 }
 
-/*// 左侧个人信息弹出层*/
+/*左侧个人信息弹出层*/
 .info {
     width: 350px;
     height: 625px;
@@ -408,7 +401,7 @@ h2 {
     transition: all .3s ease;
 }
 
-/*//个人信息呼出按钮*/
+/*个人信息呼出按钮*/
 .info-tg {
     width: 40px;
     height: 60px;
@@ -426,7 +419,7 @@ h2 {
     font-size: 20px;
 }
 
-/*//info内容*/
+/*info内容*/
 .info-box {
     padding: 15px 50px;}
 .avatar {
@@ -527,7 +520,6 @@ h2 {
 
 
 
-/* ç™¾åº¦ç»Ÿè®¡ */
 body > a {
     height: 0;
 }
