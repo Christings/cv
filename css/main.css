@@ -482,47 +482,27 @@ h2 {
     display: block;
 }
 
+.right{
+    position: relative;
+    height: 75px;
+    width:75px;
+    border-radius: 100%;
+    background: black;
+    text-align: center;
+    left: -10%;
+    margin-top: 20px;
+    line-height: 70px;
 
-.link {
-    /*display: inline-block;*/
-    height: 100px;
-    width: 100px;
-    text-indent: -9999em;
+    /*text-indent: -9999em;*/
     -webkit-transition: 0.4s linear;
     transition: 0.4s ease-in;
+
 }
 
-.link:hover {
+.right:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
-
-#link-github {
-    background: url(../img/github.png) no-repeat center;
-    margin-left: 76px;
-}
-
-#link-linkedin {
-    /*background: url(../img/linkedin.png) no-repeat center;*/
-    background: url(../img/s.png) no-repeat center;
-    margin-left: 76px;
-    /*height: 80px;*/
-    /*width: 80px;*/
-    /*border-radius: 100%;*/
-}
-
-
-#link-blog {
-    background: url(../img/blog.png) no-repeat center;
-    margin-left: 78px;
-}
-
-#link-email {
-    background: url(../img/email.png) no-repeat center;
-    margin-left: 76px;
-}
-
-
 
 body > a {
     height: 0;
