@@ -397,7 +397,7 @@ h2 {
     left: -350px;
     top: 50%;
     color: #fff;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
     border-radius: 0 4px 4px 0;
     transition: all .3s ease;
 }
@@ -405,7 +405,7 @@ h2 {
 /*个人信息呼出按钮*/
 .info-tg {
     width: 40px;
-    height: 60px;
+    height: 45px;
     position: absolute;
     right: -39px;
     top: 50%;
@@ -422,7 +422,8 @@ h2 {
 
 /*info内容*/
 .info-box {
-    padding: 15px 50px;}
+    padding: 15px 50px;
+}
 .avatar {
     display: block;
     width: 100px;
@@ -440,9 +441,7 @@ h2 {
     padding: 0 10px 10px;
     border-bottom: 1px dashed #fff;
     margin-bottom: 15px;}
-/*.info last-child {*/
-/*border: none;*/
-/*}*/
+
 .info-li h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -451,9 +450,7 @@ h2 {
     font-size: 16px;
 }
 
-
-
-/*// 左侧新闻层*/
+/*左侧新闻层*/
 .info {
     z-index: 110;
 }
