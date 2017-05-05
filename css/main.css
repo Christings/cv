@@ -56,12 +56,12 @@ h2 {
     position: absolute;
     height: 400px;
     width: 20%;
+    margin: auto 50px;
     top: 80px;
-    left: 90px;
+    left: 110px;
     display: inline-block;
     border: 8px solid #ffffff;
     border-radius: 20px;
-    /*background: #fe2f62;*/
     background: #ee5f5b;
     float: left;
 }
@@ -89,9 +89,8 @@ h2 {
 
 #intro-text {
     display: inline-block;
-    margin: 40px 100px 0 290px;
+    margin: 40px 220px 0 290px;
     color: white;
-    background: red;
     height: 350px;
     width: 40%;
     float: right;
@@ -260,7 +259,6 @@ h2 {
     font-size: 16px;
 }
 
-
 /* block-prjEXP */
 #block-prjEXP {
     padding: 50px 0 200px;
@@ -273,7 +271,8 @@ h2 {
     margin: 20px 0;
 }
 #block-prjEXP .content{
-    width: 1200px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
 }
 #block-prjEXP .project{
@@ -282,8 +281,7 @@ h2 {
     display: table;
     height: 100px;
     width: 520px;
-    /*background: #fff;*/
-    border: 1px solid #eee;
+    border: 3px solid #eee;
     box-shadow: 1px 3px 3px 0 #b9b9b9;
     border-radius: 20px;
     opacity: 1;
@@ -335,12 +333,6 @@ h2 {
     box-shadow: 0 3px 0 0 #ab3434;
 }
 
-/* block-wantMore */
-#block-wantMore {
-    width: 100%;
-    background-color: #ED6461;
-    color: #fff;
-}
 
 /*左侧个人信息弹出层*/
 .info {
