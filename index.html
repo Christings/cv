@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <title>龚燕莉的简历</title>
+
+    <!--<script type="text/javascript">-->
+    <!--(function () {-->
+    <!--function remSize() {-->
+    <!--let sw = document.documentElement.clientWidth;-->
+    <!--document.documentElement.style.fontSize = Math.floor(sw / 4.14) + 'px';-->
+    <!--}-->
+    <!--window.onresize = remSize;-->
+    <!--window.onload = remSize;-->
+    <!--window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function () {-->
+    <!--let sw = document.documentElement.clientWidth;-->
+    <!--var angle = window.screen.orientation.angle || window.orientation;-->
+    <!--if (sw < 769 && (angle === 90 || angle === -90)) {-->
+    <!--alert("竖屏浏览体验更佳，亦可使用PC");-->
+    <!--}-->
+    <!--});-->
+    <!--})();-->
+    <!--</script>-->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <!--<link rel="stylesheet" href="css/iconfont.css">-->
     <link rel="stylesheet" href="css/iconfont1.css">
+    <!--<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">-->
+
     <!--<script src="lib/jQuery/jquery-1.11.1.min.js"></script>-->
     <!--<script src="lib/navFixed-1.0.1.min.js"></script>-->
 
     <!--<script type="text/javascript" charset="utf-8"-->
-            <!--src="http://hm.baidu.com/h.js?Sla6PddYS=1&amp;8085b1bdc385f6af2b23b10f74eedded" id="ahpscripts"></script>-->
+    <!--src="http://hm.baidu.com/h.js?Sla6PddYS=1&amp;8085b1bdc385f6af2b23b10f74eedded" id="ahpscripts"></script>-->
     <!--<script type="text/javascript"-->
-            <!--src="http://221.180.150.67:9220/toolbar-cas/toolbarServlet?_uname=MTgzNDAzNTkyODlAbmV0MjAj"-->
-            <!--id="_third_class_bak"></script>-->
+    <!--src="http://221.180.150.67:9220/toolbar-cas/toolbarServlet?_uname=MTgzNDAzNTkyODlAbmV0MjAj"-->
+    <!--id="_third_class_bak"></script>-->
     <!--<script type="text/javascript"-->
-            <!--src="http://221.180.160.143:8082/toolOk.js?dXRpbWU9MTQ5MjUxMjI3NzAyOSZpc01vYmxpZT0wJnU9U1lCMkgtMzA2LUExNi1KSy1UUzEtMTUzNzMzMjY2LTQxMTYxOTA3MDImYT0xODM0MDM1OTI4OUBuZXQtNjUwNTkyODM0JmFkX2lkPTUmZGVtYW5kX2lkPSZwb2xpY3lfaWQ9JnJlZj1odHRwOi8vcmVzdW1lLmphc2lueWlwLmNvbS8="-->
-            <!--id="_third_class_oK"></script>-->
+    <!--src="http://221.180.160.143:8082/toolOk.js?dXRpbWU9MTQ5MjUxMjI3NzAyOSZpc01vYmxpZT0wJnU9U1lCMkgtMzA2LUExNi1KSy1UUzEtMTUzNzMzMjY2LTQxMTYxOTA3MDImYT0xODM0MDM1OTI4OUBuZXQtNjUwNTkyODM0JmFkX2lkPTUmZGVtYW5kX2lkPSZwb2xpY3lfaWQ9JnJlZj1odHRwOi8vcmVzdW1lLmphc2lueWlwLmNvbS8="-->
+    <!--id="_third_class_oK"></script>-->
 </head>
 <body>
 
 <section id="block-nav">
     <header class="nav-top">
-        <a class="fl" href="#block-firstPage" id="logo" hidefocus="true">Lilly Gong</a>
+        <a class="fl" href="#block-intro" id="logo" hidefocus="true">Lilly Gong</a>
         <nav class="fr">
             <a href="#block-intro" id="nav-intro" hidefocus="true">主页</a>
             <a href="#block-skill" id="nav-skill" hidefocus="true">专业技能</a>
@@ -36,7 +56,7 @@
 </section>
 
 <section id="block-intro">
-    <div class="container">
+    <div class="content">
         <div id="intro-icon1">
             <div id="intro-icon2">
                 <img id="myPhoto" src="img/me.jpg">
@@ -44,19 +64,15 @@
         </div>
 
         <div id="intro-text">
-            <div class="fr">
-                <p>我是一个做事认真执着的人，喜欢思考，喜欢新奇的事物。<br>
-                </p>
-                <p>半年多的前端开发经验，熟悉 HTML、CSS、Javascript，熟练使用 jQuery、Bootstrap等框架；<br>
-                    对服务器端有一定了解，比如SSH、SSM框架，能够配合程序员完成相应工作;<br>
-                    熟悉MySQL、SqlServer数据库；<br>
-                    理解基本的算法分析与数据结构，以及面向对象的设计模式。<br>
-                </p>
-                <h3>如果喜欢我，就赶快联系我吧！</h3>
-            </div>
+            <p>我是一个做事认真执着的人，喜欢思考，喜欢新奇的事物。<br>
+            </p>
+            <p>半年多的前端开发经验，熟悉 HTML、CSS、Javascript，熟练使用 jQuery、Bootstrap等框架；<br>
+                对服务器端有一定了解，比如SSH、SSM框架，能够配合程序员完成相应工作;<br>
+                熟悉MySQL、SqlServer数据库；<br>
+                理解基本的算法分析与数据结构，以及面向对象的设计模式。<br>
+            </p>
+            <h3>如果喜欢我，就赶快联系我吧！</h3>
         </div>
-
-
     </div>
 </section>
 
@@ -263,18 +279,10 @@
 <section id="block-workEXP">
     <h2 class="title tit4">工 作 经 历</h2>
     <div class="workEXP-main">
-        <ul class="timebox">
-            <div class="circle"></div>
-            <div class="circle0"></div>
-            <div class="circle1"></div>
-            <li class="time">2015.01-2015.10</li>
-            <li class="time0">2015.01-2015.10</li>
-            <li class="time1">2016.04-2017.03</li>
-
-        </ul>
-        <!--<div class="timeline"></div>-->
         <ul class="workbox">
             <li class="work-intro">
+                <p class="time">2015.01-2015.10</p>
+                <div class="circle"></div>
                 <label class="work-place">北京微鼎网络科技有限公司</label>
                 <label class="work-position">需求分析</label>
                 <label class="work-do">1.负责测试分析，测试用例的设计、分析、编写，测试执行，定期汇报项目进度;</label>
@@ -284,6 +292,8 @@
                 <label class="work-do">5.根据产品测试需求完成测试环境的配置工作，具备独立完成测试任务的能力；</label>
             </li>
             <li class="work-intro0">
+                <p class="time0">2015.01-2015.10</p>
+                <div class="circle0"></div>
                 <label class="work-place">英斯特哈博(北京)科技有限公司</label>
                 <label class="work-position">测试工程师</label>
                 <label class="work-do">1.负责测试分析，测试用例的设计、分析、编写，测试执行，定期汇报项目进度;</label>
@@ -295,6 +305,8 @@
                 <label class="work-do">7.与开发人员进行沟通交流，推动项目的进度;</label>
             </li>
             <li class="work-intro1">
+                <p class="time1">2015.01-2015.10</p>
+                <div class="circle1"></div>
                 <label class="work-place">北京三源合众科技有限公司</label>
                 <label class="work-position">前端工程师</label>
                 <label class="work-do">1.参与公司项目中的Web前端功能设计、开发和实现；</label>
@@ -381,7 +393,8 @@
     <!--<a class="link" href="https://github.com/Gladysgong" id="link-github" hidefocus="true">GitHub</a>-->
     <a class="right iconfont icon-github1" href="https://github.com/Gladysgong" hidefocus="true"></a>
     <a class="right iconfont icon-CN_csdnnet" href="http://blog.csdn.net/u012052168" hidefocus="true"></a>
-    <a class="right iconfont icon-iconsf-copy" href="https://segmentfault.com/u/haitanghuaweimian/articles" hidefocus="true"></a>
+    <a class="right iconfont icon-iconsf-copy" href="https://segmentfault.com/u/haitanghuaweimian/articles"
+       hidefocus="true"></a>
     <a class="right iconfont icon-appicon06-copy" href="mailto:531404376@qq.com" hidefocus="true"></a>
     <!--<a class="link" href="http://cn.linkedin.com/pub/俊星-叶/98/76b/a93/" id="link-linkedin" hidefocus="true">Linkedin</a>-->
     <!--<a class="link" href="http://blog.csdn.net/u012052168" id="link-blog" hidefocus="true">Blog</a>-->

@@ -2,6 +2,7 @@
 section {
     width: 100%;
     overflow: hidden;
+    min-width: 660px;
 }
 
 .container {
@@ -45,16 +46,18 @@ h2 {
 
 /* block-intro */
 #block-intro {
-    height: auto;
+    height: 700px;
     width: 100%;
     background-color: #22B573;
     padding: 60px 0 100px;
 }
+
 #intro-icon1 {
     position: absolute;
     height: 400px;
-    width: 300px;
+    width: 20%;
     top: 80px;
+    left: 90px;
     display: inline-block;
     border: 8px solid #ffffff;
     border-radius: 20px;
@@ -65,7 +68,7 @@ h2 {
 #intro-icon2 {
     position: absolute;
     height: 400px;
-    width: 300px;
+    width: 100%;
     left: 10px;
     top: 10px;
     display: inline-block;
@@ -76,7 +79,7 @@ h2 {
 #myPhoto {
     position: absolute;
     height: 400px;
-    width: 300px;
+    width: 100%;
     left: 10px;
     top: 10px;
     display: inline-block;
@@ -86,33 +89,12 @@ h2 {
 
 #intro-text {
     display: inline-block;
-    margin: 40px 0 0 290px;
+    margin: 40px 100px 0 290px;
     color: white;
-    height: 500px;
-}
-
-#intro-text li {
-    height: 30px;
-}
-
-#intro-text ul li a {
-    display: inline-block;
-}
-
-#intro-text ul li a:hover {
-    border-bottom: 2px solid white;
-}
-
-#intro-text ul li span {
-    display: inline-block;
-    text-align: right;
-    width: 70px;
-}
-
-#intro-text div {
-    display: inline-block;
-    width: 550px;
-    margin-left: 120px;
+    background: red;
+    height: 350px;
+    width: 40%;
+    float: right;
 }
 
 #intro-text > div > p {
@@ -142,7 +124,7 @@ h2 {
     vertical-align: middle;
     width: 210px;
     height: 100%;
-    margin: 5px 20px;
+    margin: 5px 10px;
     background: #ffffff;
     border: 1px solid #efefef;
     box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.35);
@@ -197,93 +179,82 @@ h2 {
     margin-top: 10px;
     text-align: center;
 }
-
 #block-workEXP .work-title {
     width: 300px;
     margin: 0 auto;
     text-align: center;
 }
-
 #block-workEXP .workEXP-main {
     height: auto;
     width: auto;
     margin: 20px 0 0 10px;
 }
-
-#block-workEXP .timebox {
-    margin-left: 110px;
-    font-size: 29px;
+#block-workEXP .workbox {
+    margin-left: 40px;
 }
-
-#block-workEXP .timebox li {
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    /*margin-left:80px;*/
-}
-#block-workEXP .timebox .circle {
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
-    background: #22B573;
-    position: absolute;
-    left: 0%;
-    margin-top: 5px;
-    border: 4px solid #ffffff;
-}
-#block-workEXP .timebox .circle0{
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
-    background: #22B573;
-    position: absolute;
-    left: 30%;
-    margin-top: 5px;
-    border: 4px solid #ffffff;
-}
-#block-workEXP .timebox .circle1{
-    height: 70px;
-    width: 70px;
-    border: 4px solid #ffffff;
-    border-radius: 100%;
-    background: #22B573;
-    position: absolute;
-    left: 61.2%;
-    margin-top: 5px;
+#block-workEXP .time {
+    border-bottom: 5px solid #fff;
+    margin-bottom: 20px;
 }
 #block-workEXP .time0 {
-    margin-left: 110px
+    border-bottom: 5px solid #fff;
+    margin-bottom: 20px;
 }
 #block-workEXP .time1 {
-    margin-left: 110px
+    border-bottom: 5px solid #fff;
+    margin-bottom: 20px;
 }
-#block-workEXP .workbox {
-    margin-left: 10px;
-
+#block-workEXP .circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: #22B573;
+    position: relative;
+    left: -20%;
+    margin-top: -70px;
+    border: 4px solid #ffffff;
 }
-
+#block-workEXP .circle0{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: #22B573;
+    position: relative;
+    left: -20%;
+    margin-top: -70px;
+    border: 4px solid #ffffff;
+}
+#block-workEXP .circle1{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: #22B573;
+    position: relative;
+    left: -20%;
+    margin-top: -70px;
+    border: 4px solid #ffffff;
+}
+#block-workEXP .workbox p{
+    text-align: center;
+    font-size: 30px;
+}
 #block-workEXP .workbox li {
     padding-top: 10px;
-    border-top: 8px solid #eeeeee;
     display: inline-block;
     width: 360px;
     vertical-align: top;
-    margin: 15px 30px;
+    margin: 15px 25px;
 }
-
 #block-workEXP .workbox li label {
     display: block;
 }
-
 #block-workEXP .workbox .work-place {
     font-size: 26px;
     font-weight: bold
 }
-
 #block-workEXP .workbox .work-position {
     font-size: 20px;
 }
-
 #block-workEXP .workbox .work-do {
     margin-top: 10px;
     font-size: 16px;
