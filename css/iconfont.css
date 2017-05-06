@@ -1,93 +1,39 @@
-@font-face {
-  font-family: "iconfont";
-  src: url('../fonts/iconfont.eot?t=1486564141126');
-  /* IE9*/
-  src: url('../fonts/iconfont.eot?t=1486564141126#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/iconfont.woff?t=1486564141126') format('woff'), /* chrome, firefox */
-  url('../fonts/iconfont.ttf?t=1486564141126') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/iconfont.svg?t=1486564141126#iconfont') format('svg');
-  /* iOS 4.1- */
+
+@font-face {font-family: "iconfont";
+    src: url('../fonts/iconfont.eot?t=1493891984958'); /* IE9*/
+    src: url('../fonts/iconfont.eot?t=1493891984958#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff?t=1493891984958') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf?t=1493891984958') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg?t=1493891984958#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family:"iconfont" !important;
+    font-size:35px;
+    font-style:normal;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.iconfont :before {
-   vertical-align: middle;
- }
+.icon-iconsf:before { content: "\e602"; }
 
-.iconfont:after {
-   content: '';
-   display: inline-block;
-   height: 100%;
-   vertical-align: middle;
- }
+.icon-qianjin:before { content: "\e641"; }
 
-.icon-mobile:before {
-  content: "\e6b2";
-}
+.icon-github:before { content: "\e7d6"; }
 
-.icon-mianshi:before {
-  content: "\e65b";
-}
+.icon-appicon06-copy:before { content: "\e611"; }
 
-.icon-zhandou:before {
-  content: "\e74f";
-}
+.icon-iconsf-copy:before { content: "\e610"; }
 
-.icon-nodejs:before {
-  content: "\e989";
-}
+.icon-iconsf-copy1:before { content: "\e600"; }
 
-.icon-jquery-copy:before {
-  content: "\e600";
-}
+.icon-github1:before { content: "\e603"; }
 
-.icon-shouye:before {
-  content: "\e629";
-}
+.icon-CN_csdnnet:before { content: "\e64f"; }
 
-.icon-hire:before {
-  content: "\e6fd";
-}
+.icon-POP_GitHub:before { content: "\e67e"; }
 
-.icon-oGDwRZJ01:before {
-  content: "\e633";
-}
+.icon-POP_Skype:before { content: "\e687"; }
 
-.icon-css:before {
-  content: "\e61f";
-}
-
-.icon-react:before {
-  content: "\e770";
-}
-
-.icon-inauguration:before {
-  content: "\e877";
-}
-
-.icon-daima:before {
-  content: "\e620";
-}
-
-.icon-qianjin:before {
-  content: "\e602";
-}
-
-.icon-github:before {
-  content: "\e601";
-}
-
-.icon-down:before {
-  content: "\e70f";
-}
-
-.icon-linkedin:before {
-  content: "\e6e2";
-}
+.icon-sheweichangyong:before { content: "\e605"; }
