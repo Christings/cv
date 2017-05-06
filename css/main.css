@@ -89,15 +89,20 @@ h2 {
 
 #intro-text {
     display: inline-block;
-    margin: 150px 220px 0 290px;
+    margin: 100px 220px 0 290px;
     color: white;
     height: 350px;
     width: 40%;
     float: right;
+    line-height: 30px;
 }
 
 #intro-text > div > p {
     margin-bottom: 26px;
+}
+#intro-text h2 {
+    line-height: 50px;
+    width: 650px;
 }
 
 /* block-skill */
