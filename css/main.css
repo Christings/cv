@@ -46,30 +46,31 @@ h2 {
 
 /* block-intro */
 #block-intro {
-    height: 700px;
+    height: auto;
     width: 100%;
+    /*width: auto;*/
     background-color: #22B573;
     padding: 60px 0 100px;
 }
 
 #intro-icon1 {
-    position: absolute;
+    /*position: absolute;*/
     height: 400px;
-    width: 20%;
+    width: 100%;
     margin: auto 50px;
     top: 80px;
-    left: 110px;
+    left: 10%;
     display: inline-block;
     border: 8px solid #ffffff;
     border-radius: 20px;
     background: #ee5f5b;
-    float: left;
+    /*float: left;*/
 }
 #intro-icon2 {
     position: absolute;
     height: 400px;
     width: 100%;
-    left: 10px;
+    left: 25%;
     top: 10px;
     display: inline-block;
     border: 8px solid #ffffff;
@@ -77,30 +78,32 @@ h2 {
     background: #5bb75b;
 }
 #myPhoto {
-    position: absolute;
+    position: relative;
     height: 400px;
     width: 100%;
-    left: 10px;
-    top: 10px;
-    display: inline-block;
+    left: 5%;
+    /*top: 10px;*/
+    /*display: inline-block;*/
     border: 8px solid #ffffff;
     border-radius: 20px;
 }
 
-#intro-text {
-    display: inline-block;
-    margin: 100px 220px 0 290px;
+.intro-text {
+    /*display: inline-block;*/
+    /*position: relative;*/
+    margin: 10px 220px 0 290px;
     color: white;
-    height: 350px;
-    width: 40%;
-    float: right;
-    line-height: 30px;
+    height: 500px;
+    width: 100%;
+    /*line-height: 30px;*/
+    /*top:40%;*/
+    background: red;
 }
 
-#intro-text > div > p {
+.intro-text p {
     margin-bottom: 26px;
 }
-#intro-text h2 {
+.intro-text h2 {
     line-height: 50px;
     width: 650px;
 }
@@ -283,7 +286,7 @@ h2 {
 #block-prjEXP .project{
     margin: 20px 0 0 40px;
     display: table;
-    height: 150px;
+    height: 170px;
     width: 500px;
     border: 3px solid #eee;
     box-shadow: 1px 3px 3px 0 #b9b9b9;
@@ -296,30 +299,30 @@ h2 {
     /*float: left;*/
 }
 
-@media screen and (max-device-width: 650px) {
+/*@media screen and (max-device-width: 650px) {*/
 
-    #block-prjEXP .content{
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        background: red;
-    }
+    /*#block-prjEXP .content{*/
+        /*width: auto;*/
+        /*height: auto;*/
+        /*margin: 0 auto;*/
+        /*background: red;*/
+    /*}*/
 
-    #block-prjEXP .project{
-        margin: 20px 0 0 40px;
-        display: table;
-        height: 150px;
-        width: 500px;
-        border: 3px solid #eee;
-        box-shadow: 1px 3px 3px 0 #b9b9b9;
-        border-radius: 20px;
-        opacity: 1;
-        cursor: pointer;
-        box-sizing: border-box;
-        padding: 5px;
-        float: right;
-    }
-}
+    /*#block-prjEXP .project{*/
+        /*margin: 20px 0 0 40px;*/
+        /*display: table;*/
+        /*height: 150px;*/
+        /*width: 500px;*/
+        /*border: 3px solid #eee;*/
+        /*box-shadow: 1px 3px 3px 0 #b9b9b9;*/
+        /*border-radius: 20px;*/
+        /*opacity: 1;*/
+        /*cursor: pointer;*/
+        /*box-sizing: border-box;*/
+        /*padding: 5px;*/
+        /*float: right;*/
+    /*}*/
+/*}*/
 #block-prjEXP .project .pro-img{
     display: table-cell;
     vertical-align: middle;
@@ -340,8 +343,8 @@ h2 {
     text-align: left;
     width: auto;
     /*width: 400px;*/
-    padding: 10px 10px;
-    height: 160px;
+    padding: 5px 10px;
+    height: 270px;
 }
 #block-prjEXP .project .pro-txt h3{
     font-size: 14px;
