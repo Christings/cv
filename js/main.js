@@ -6,6 +6,18 @@ var infoOut=0;//info的弹出层状态
 var infoTimer=null;//clearTimer
 var p4Timer=null;
 var p4Animat=true;
+touch.config({
+    tap: true,                   //tap类事件开关, 默认为true
+    doubleTap: true,        //doubleTap事件开关， 默认为true
+    hold: true,                 //hold事件开关, 默认为true
+    holdTime: 650,           //hold时间长度
+    swipe: true,                //swipe事件开关
+    swipeTime: 300,             //触发swipe事件的最大时长
+    swipeMinDistance: 18,   //swipe移动最小距离
+    swipeFactor: 5,             //加速因子, 值越大变化速率越快
+    drag: true,                 //drag事件开关
+    pinch: true,                //pinch类事件开关
+});
 pageInit();
 function pageInit() {
     // pageScroll();
@@ -20,6 +32,16 @@ function pageInit() {
         }
         infoToggle();
     });
+    touch.on(".info-tg","tap",function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (infoOut === 2) {
+            infoOut = 1;
+        } else {
+            infoOut = 2;
+        }
+        infoToggle();
+    })
     // 防止click引发的touchend冒泡
     $(".info-tg").on("touchend", function (event) {
         event.stopPropagation();
@@ -235,3 +257,4 @@ function swipe() {
 //     }
 //
 // }
+
