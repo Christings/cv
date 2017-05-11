@@ -292,7 +292,33 @@ h2 {
     cursor: pointer;
     box-sizing: border-box;
     padding: 5px;
-    float: left;
+    left:10%;
+    /*float: left;*/
+}
+
+@media screen and (max-device-width: 650px) {
+
+    #block-prjEXP .content{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        background: red;
+    }
+
+    #block-prjEXP .project{
+        margin: 20px 0 0 40px;
+        display: table;
+        height: 150px;
+        width: 500px;
+        border: 3px solid #eee;
+        box-shadow: 1px 3px 3px 0 #b9b9b9;
+        border-radius: 20px;
+        opacity: 1;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 5px;
+        float: right;
+    }
 }
 #block-prjEXP .project .pro-img{
     display: table-cell;
@@ -312,7 +338,8 @@ h2 {
 }
 #block-prjEXP .project .pro-txt{
     text-align: left;
-    width: 400px;
+    width: auto;
+    /*width: 400px;*/
     padding: 10px 10px;
     height: 160px;
 }

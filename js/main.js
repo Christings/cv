@@ -172,43 +172,43 @@ function infoToggle() {
 // }
 
 //移动端滑动事件
-// function swipe() {
-//     var startX=0;
-//     var startY=0;
-//     var endX=0;
-//     var endY=0;
-//     $(document).on({
-//         'touchmove':function (event) {
-//             event.preventDefault();
-//         },
-//         'touchstart':function (event) {
-//             startX=event.touches[0].clientX;
-//             startY=event.touches[0].clientY;
-//         },
-//         'touchend':function (event) {
-//             if(preventCombo()){
-//                 return;
-//             }
-//             endX=event.changeTouches[0].clientX;
-//             endY=event.changeTouches[0].clientY;
-//             var dX=endX-startX;
-//             var dY=endY-startY;
-//             switch (slideDirect(dX,dY)){
-//                 case -2:
-//                     if(onIndex<4){
-//                         onIndex++;
-//                     }
-//                     break;
-//                 case 2:
-//                     if(onIndex>0){
-//                         onIndex--;
-//                     }
-//                     break;
-//             }
-//             whenIndexChange();
-//         }
-//     })
-// }
+function swipe() {
+    var startX=0;
+    var startY=0;
+    var endX=0;
+    var endY=0;
+    $(document).on({
+        'touchmove':function (event) {
+            event.preventDefault();
+        },
+        'touchstart':function (event) {
+            startX=event.touches[0].clientX;
+            startY=event.touches[0].clientY;
+        },
+        'touchend':function (event) {
+            if(preventCombo()){
+                return;
+            }
+            endX=event.changeTouches[0].clientX;
+            endY=event.changeTouches[0].clientY;
+            var dX=endX-startX;
+            var dY=endY-startY;
+            switch (slideDirect(dX,dY)){
+                case -2:
+                    if(onIndex<4){
+                        onIndex++;
+                    }
+                    break;
+                case 2:
+                    if(onIndex>0){
+                        onIndex--;
+                    }
+                    break;
+            }
+            whenIndexChange();
+        }
+    })
+}
 
 //判断滑动方向，注意移动是与滑动相反的方向，左滑应该右移
 // function slideDirect(dX,dY) {
